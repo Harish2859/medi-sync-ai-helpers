@@ -18,7 +18,7 @@ const mockPredictions = {
   'infectious': {
     predictedDisease: 'Influenza (Flu)',
     confidenceScore: 87,
-    description: 'Influenza is a viral infection that attacks your respiratory system — your nose, throat and lungs. It's commonly called the flu.',
+    description: 'Influenza is a viral infection that attacks your respiratory system — your nose, throat and lungs. It\'s commonly called the flu.',
     riskLevel: 'Moderate',
     recommendation: 'Rest, hydration, and over-the-counter fever reducers can help manage symptoms. Contact your healthcare provider if symptoms worsen.',
     icon: '🦠',
@@ -88,7 +88,7 @@ const mockPredictions = {
   'endocrine': {
     predictedDisease: 'Hypothyroidism',
     confidenceScore: 82,
-    description: 'Hypothyroidism (underactive thyroid) is a condition in which your thyroid gland doesn't produce enough of certain crucial hormones.',
+    description: 'Hypothyroidism (underactive thyroid) is a condition in which your thyroid gland doesn\'t produce enough of certain crucial hormones.',
     riskLevel: 'Moderate',
     recommendation: 'Consult with an endocrinologist for proper testing and potential hormone replacement therapy.',
     icon: '⚖️',
