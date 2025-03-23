@@ -5,6 +5,7 @@ import { User, Mail, Phone, Lock, Eye, EyeOff, AlertCircle, CheckCircle } from '
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CustomCursor from '../components/CustomCursor';
+import BackButton from '../components/BackButton';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -78,6 +79,10 @@ const Signup = () => {
       
       <div className="flex-grow flex items-center justify-center px-4 py-12 bg-gray-50">
         <div className="max-w-md w-full space-y-8">
+          <div className="flex justify-start w-full">
+            <BackButton to="/" />
+          </div>
+          
           <div className="text-center">
             <h2 className="mt-6 text-3xl font-bold text-gray-900">Create your account</h2>
             <p className="mt-2 text-sm text-gray-600">
