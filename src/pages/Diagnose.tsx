@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Virus, Brain, Flask, Heart, Microscope, Hospital, Thermometer, Search, Activity, ArrowRight, ListFilter, ChevronRight, Info } from 'lucide-react';
@@ -44,7 +43,7 @@ const Diagnose = () => {
     {
       id: 'autoimmune',
       title: 'Autoimmune & Inflammatory',
-      description: 'Tests for diseases where the immune system attacks the body's own tissues.',
+      description: 'Tests for diseases where the immune system attacks the body\'s own tissues.',
       icon: <Flask className="w-6 h-6 text-medisync-600" />,
       to: '/diagnose/autoimmune',
       category: 'immunology',
@@ -66,7 +65,7 @@ const Diagnose = () => {
       icon: <Dna className="w-6 h-6 text-medisync-600" />,
       to: '/diagnose/genetic',
       category: 'genetic',
-      conditions: ['Sickle Cell Anemia', 'Cystic Fibrosis', 'Huntington's Disease']
+      conditions: ['Sickle Cell Anemia', 'Cystic Fibrosis', 'Huntington\'s Disease']
     },
     {
       id: 'endocrine',
@@ -75,7 +74,7 @@ const Diagnose = () => {
       icon: <Activity className="w-6 h-6 text-mint-600" />,
       to: '/diagnose/endocrine',
       category: 'endocrinology',
-      conditions: ['Hypothyroidism', 'Hyperthyroidism', 'Addison's Disease']
+      conditions: ['Hypothyroidism', 'Hyperthyroidism', 'Addison\'s Disease']
     },
     {
       id: 'gastrointestinal',
@@ -84,7 +83,7 @@ const Diagnose = () => {
       icon: <Stomach className="w-6 h-6 text-medisync-600" />,
       to: '/diagnose/gastrointestinal',
       category: 'digestive',
-      conditions: ['GERD', 'IBS', 'Crohn's Disease', 'Hepatitis', 'Cirrhosis']
+      conditions: ['GERD', 'IBS', 'Crohn\'s Disease', 'Hepatitis', 'Cirrhosis']
     },
     {
       id: 'kidney',
