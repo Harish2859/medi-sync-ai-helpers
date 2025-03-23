@@ -1,6 +1,11 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Virus, Brain, Flask, Heart, Microscope, Hospital, Thermometer, Search, Activity, ArrowRight, ListFilter, ChevronRight, Info } from 'lucide-react';
+import { 
+  Microscope, Brain, BeakerIcon, Heart, Activity, 
+  Search, ArrowRight, ListFilter, ChevronRight, Info,
+  Bug, FileText, Thermometer, Hospital
+} from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CustomCursor from '../components/CustomCursor';
@@ -26,7 +31,7 @@ const Diagnose = () => {
       id: 'infectious',
       title: 'Infectious Diseases',
       description: 'Tests for conditions caused by bacterial, viral, fungal, and parasitic pathogens.',
-      icon: <Virus className="w-6 h-6 text-medisync-600" />,
+      icon: <Bug className="w-6 h-6 text-medisync-600" />,
       to: '/diagnose/infectious',
       category: 'infectious',
       conditions: ['Tuberculosis', 'Pneumonia', 'Influenza', 'COVID-19', 'HIV/AIDS']
@@ -44,7 +49,7 @@ const Diagnose = () => {
       id: 'autoimmune',
       title: 'Autoimmune & Inflammatory',
       description: 'Tests for diseases where the immune system attacks the body\'s own tissues.',
-      icon: <Flask className="w-6 h-6 text-medisync-600" />,
+      icon: <BeakerIcon className="w-6 h-6 text-medisync-600" />,
       to: '/diagnose/autoimmune',
       category: 'immunology',
       conditions: ['Rheumatoid Arthritis', 'Lupus', 'Multiple Sclerosis', 'Psoriasis']
