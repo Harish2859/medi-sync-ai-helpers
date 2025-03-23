@@ -1,10 +1,9 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Microscope, Brain, BeakerIcon, Heart, Activity, 
   Search, ArrowRight, ListFilter, ChevronRight, Info,
-  Bug, FileText, Thermometer, Hospital
+  Bug, File, Thermometer, Hospital
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -15,7 +14,6 @@ const Diagnose = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeFilter, setActiveFilter] = useState('all');
   
-  // Categories for diagnostic tests
   const categories = [
     { id: 'all', name: 'All Tests' },
     { id: 'infectious', name: 'Infectious Diseases' },
@@ -25,7 +23,6 @@ const Diagnose = () => {
     { id: 'neurological', name: 'Neurological' }
   ];
   
-  // Medical conditions data
   const medicalConditions = [
     {
       id: 'infectious',
@@ -119,7 +116,6 @@ const Diagnose = () => {
     }
   ];
   
-  // Filter conditions based on search and category
   const filteredConditions = medicalConditions.filter(condition => {
     const matchesSearch = searchQuery === '' || 
                           condition.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -137,7 +133,6 @@ const Diagnose = () => {
       <Navbar />
       
       <main className="flex-grow">
-        {/* Hero section */}
         <section className="bg-gradient-to-br from-medisync-50 to-mint-50 pt-24 pb-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
@@ -165,7 +160,6 @@ const Diagnose = () => {
           </div>
         </section>
         
-        {/* Category filters */}
         <section className="bg-white border-b border-gray-100 sticky top-16 z-10 shadow-sm">
           <div className="container mx-auto px-4">
             <div className="flex items-center space-x-1 overflow-x-auto scrollbar-none py-2">
@@ -188,7 +182,6 @@ const Diagnose = () => {
           </div>
         </section>
         
-        {/* Medical conditions grid */}
         <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between mb-8">
@@ -224,7 +217,6 @@ const Diagnose = () => {
           </div>
         </section>
         
-        {/* How it works */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -271,7 +263,7 @@ const Diagnose = () => {
                 </div>
                 <div className="pt-4">
                   <div className="w-12 h-12 rounded-full bg-medisync-100 flex items-center justify-center mb-4">
-                    <FileText className="w-6 h-6 text-medisync-600" />
+                    <FileTextIcon className="w-6 h-6 text-medisync-600" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Review Results</h3>
                   <p className="text-gray-600 text-sm">
@@ -308,7 +300,6 @@ const Diagnose = () => {
           </div>
         </section>
         
-        {/* FAQs */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
@@ -423,7 +414,7 @@ function Dna(props: any) {
   );
 }
 
-function FileText(props: any) {
+function FileTextIcon(props: any) {
   return (
     <svg
       {...props}
