@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { File, UploadCloud, FileText, Calendar, Search, Download, Filter } from 'lucide-react';
 import CustomCursor from '../components/CustomCursor';
-import BackButton from '../components/BackButton';
 import { Button } from '@/components/ui/button';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -72,8 +71,6 @@ const Records = () => {
       <CustomCursor />
       
       <main className="container mx-auto px-4 py-8 animate-fade-in">
-        <BackButton to="/dashboard" />
-        
         <div className="mb-6">
           <h1 className="text-2xl font-bold text-gray-900">Medical Records</h1>
           <p className="text-gray-600">Access and manage your health documents</p>
